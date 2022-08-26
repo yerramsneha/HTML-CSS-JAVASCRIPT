@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+{
+color:blue;
+
+font-size: 30px;
+margin: 30px;
+font-style: italic;
+}
+</style>
+</head>
+<body>
+<div id="res"></div>
+<script>
+if(typeof(Storage)!=="undefined")
+{
+localStorage.setItem("name","sam");
+
+<!-- document.getElementById("res").innerHTML=localStorage.getItem("name");
+
+document.write("Iam"+" " +localStorage.name);
+}
+else
+{
+<!-- document.getElementById("res").innerHTML="browser is not supportted";
+
+alert("soory!! not supported")
+}
+</script>
+</body>
+</html>

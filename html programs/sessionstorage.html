@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function clickCounter()
+{
+if (typeof(Storage) !== ("undefined") )
+{
+	if(sessionStorage.clickcount)
+	{
+	sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+	}
+	else
+	{
+	sessionStorage.clickcount = 1;
+	}
+document.getElementById("result").innerHTML = "You have clicked the button " + 
+sessionStorage.clickcount + " times in this session";
+}
+else
+{
+document.getElementById("result").innerHTML="not supported";
+<!-- alert("your browser is not supportive")
+}
+}
+</script>
+</head>
+<body>
+<p>
+click the button to know no of clicks...
+<br></p>
+<p><button onclick="clickCounter()" type="button">know your no of clicks</button></p>
+<div id="result"></div>
+</body>
+</html>
